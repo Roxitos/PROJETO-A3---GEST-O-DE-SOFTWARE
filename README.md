@@ -10,8 +10,8 @@ Repositório da equipe de QA responsável pela avaliação da qualidade do siste
 
 ## 👥 Integrantes
 
-| Nome | RA | 
-|------|----|--------|
+| Nome | RA |
+|------|----|
 | Rafael Stender Rocha | `12524117225` |
 | Gian Carlo Tozzatti | `12524124240` |
 | Theobaldo Ocerio da Silva | `1252421088` |
