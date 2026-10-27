@@ -10,7 +10,7 @@ Repositório da equipe de QA responsável pela avaliação da qualidade do siste
 
 ## 👥 Integrantes
 
-| Nome | RA | E-mail |
+| Nome | RA | 
 |------|----|--------|
 | Rafael Stender Rocha | `12524117225` |
 | Gian Carlo Tozzatti | `12524124240` |
