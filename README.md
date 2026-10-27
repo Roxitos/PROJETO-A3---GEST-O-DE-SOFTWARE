@@ -12,9 +12,9 @@ Repositório da equipe de QA responsável pela avaliação da qualidade do siste
 
 | Nome | RA | E-mail |
 |------|----|--------|
-| Rafael Stender Rocha | `12524117225` | rafaelstender@gmail.com |
-| Gian Carlo Tozzatti | `12524124240` | giantozzatti2005@gmail.com |
-| Theobaldo Ocerio da Silva | `1252421088` | ocerio.theo@gmail.com |
+| Rafael Stender Rocha | `12524117225` |
+| Gian Carlo Tozzatti | `12524124240` |
+| Theobaldo Ocerio da Silva | `1252421088` |
 
 **Unidade Curricular:** Gestão da Qualidade de Software
 **Professor:** Emerson dos Santos Paduan
