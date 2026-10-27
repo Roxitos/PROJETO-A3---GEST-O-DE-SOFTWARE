@@ -175,4 +175,3 @@ O perfil `test` já vem ativo no `application.yml`, não precisa de banco instal
 
 O sistema avaliado é de autoria de **[Douglas Fragoso](https://github.com/douglasfragoso)**. Este repositório tem finalidade exclusivamente acadêmica.
 
-> Observação da equipe: o repositório original não possui um arquivo `LICENSE` próprio. Esse ponto foi registrado como item de atenção na análise de riscos do projeto.
