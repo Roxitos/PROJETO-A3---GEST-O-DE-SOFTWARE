@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 476" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">
+  <title>Matriz probabilidade × impacto</title>
+  <rect width="760" height="476" fill="#ffffff"/>
+  <text x="24" y="28" font-size="15" font-weight="600" fill="#1f1e1d">5 dos 9 riscos estão na zona de exposição alta; R02 e R05 no canto crítico</text>
+  <text x="24" y="50" font-size="11.5" fill="#6b6a65">Cor = exposição P × I: vermelho alta (6 a 9), amarelo média (3 a 4), verde baixa (1 a 2)</text>
+  <g stroke="#d6d4cc" stroke-width="1.25">
+    <rect x="136" y="72" width="192" height="112" fill="#fdf0d9"/><rect x="328" y="72" width="192" height="112" fill="#f6dfe0"/><rect x="520" y="72" width="192" height="112" fill="#f6dfe0"/>
+    <rect x="136" y="184" width="192" height="112" fill="#dff0dc"/><rect x="328" y="184" width="192" height="112" fill="#fdf0d9"/><rect x="520" y="184" width="192" height="112" fill="#f6dfe0"/>
+    <rect x="136" y="296" width="192" height="112" fill="#dff0dc"/><rect x="328" y="296" width="192" height="112" fill="#dff0dc"/><rect x="520" y="296" width="192" height="112" fill="#fdf0d9"/>
+  </g>
+  <g fill="#1f1e1d">
+    <text x="534" y="102">R02 E-mail duplicado via PUT</text><text x="534" y="124">R05 Credenciais fixas</text>
+    <text x="342" y="102">R01 E-mail sem validação</text><text x="342" y="124">R03 Erro 500 por tamanho</text><text x="342" y="146">R07 Licença sem arquivo</text>
+    <text x="150" y="102">R06 Swagger inconsistente</text>
+    <text x="342" y="214">R04 Status pela mensagem</text><text x="342" y="236">R08 Depende de Docker</text>
+    <text x="534" y="326">R09 Abaixo de 1.000 linhas</text>
+  </g>
+  <g fill="#6b6a65" font-size="11.5" text-anchor="end">
+    <text x="700" y="172">9</text><text x="508" y="172">6</text><text x="316" y="172">3</text><text x="508" y="284">4</text><text x="700" y="396">3</text>
+  </g>
+  <g fill="#1f1e1d" font-size="12.5" text-anchor="end"><text x="124" y="132">Alta (3)</text><text x="124" y="244">Média (2)</text><text x="124" y="356">Baixa (1)</text></g>
+  <text x="34" y="240" font-size="12.5" font-weight="600" fill="#1f1e1d" text-anchor="middle" transform="rotate(-90 34 240)">Probabilidade</text>
+  <line x1="136" x2="712" y1="408" y2="408" stroke="#9b9a93" stroke-width="1.25"/>
+  <g fill="#1f1e1d" font-size="12.5" text-anchor="middle"><text x="232" y="430">Baixo (1)</text><text x="424" y="430">Médio (2)</text><text x="616" y="430">Alto (3)</text><text x="424" y="456" font-weight="600">Impacto</text></g>
+</svg>
