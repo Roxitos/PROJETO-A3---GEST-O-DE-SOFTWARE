@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 572" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <title>Arquitetura do rest-spring-test</title>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9b9a93"/></marker></defs>
+  <rect width="760" height="572" fill="#ffffff"/>
+  <text x="24" y="28" font-size="15" font-weight="600" fill="#1f1e1d">Cada requisição atravessa 3 camadas até o banco; erros voltam pelo handler</text>
+  <rect x="24" y="136" width="712" height="316" rx="12" fill="none" stroke="#d6d4cc" stroke-width="1.25"/>
+  <text x="40" y="160" font-weight="600" fill="#6b6a65">Aplicação Spring Boot (porta 8080)</text>
+  <g fill="none" stroke="#9b9a93" stroke-width="1.25">
+    <path d="M300 104V184" marker-end="url(#a)"/><path d="M206 240V280" marker-end="url(#a)"/><path d="M206 336V376" marker-end="url(#a)"/>
+    <path d="M356 212H420" marker-end="url(#a)"/><path d="M356 308H562V240" marker-end="url(#a)"/><path d="M356 404H420" marker-end="url(#a)"/>
+    <path d="M562 184V76H510" marker-end="url(#a)"/><path d="M206 432V470H148V492" marker-end="url(#a)"/><path d="M206 470H388V492" marker-end="url(#a)"/>
+  </g>
+  <g stroke="#9b9a93" stroke-width="1.25">
+    <rect x="250" y="48" width="260" height="56" rx="8" fill="none"/>
+    <rect x="56" y="184" width="300" height="56" rx="8" fill="none"/>
+    <rect x="56" y="280" width="300" height="56" rx="8" fill="none"/>
+    <rect x="56" y="376" width="300" height="56" rx="8" fill="none"/>
+    <rect x="420" y="184" width="284" height="56" rx="8" fill="none"/>
+    <rect x="420" y="376" width="284" height="56" rx="8" fill="none"/>
+    <rect x="40" y="492" width="216" height="56" rx="8" fill="#f0efec"/>
+    <rect x="280" y="492" width="216" height="56" rx="8" fill="#f0efec"/>
+  </g>
+  <g text-anchor="middle" fill="#1f1e1d" font-weight="600">
+    <text x="380" y="72" font-size="15">Cliente HTTP</text>
+    <text x="206" y="208">PersonController</text><text x="206" y="304">PersonService</text><text x="206" y="400">PersonRepository</text>
+    <text x="562" y="208">ControllerExceptionHandler</text><text x="562" y="400">Person (entidade)</text>
+    <text x="148" y="516">H2 em memória</text><text x="388" y="516">MySQL 8</text>
+  </g>
+  <g text-anchor="middle" fill="#6b6a65" font-size="11.5">
+    <text x="380" y="92">Postman, Swagger UI, Rest-Assured</text>
+    <text x="206" y="226">6 endpoints em /person; valida Create/Update</text>
+    <text x="206" y="322">Regras de negócio e transações</text>
+    <text x="206" y="418">Spring Data JPA, findByEmail, updatePerson</text>
+    <text x="562" y="226">Converte exceções em 400 / 404 JSON</text>
+    <text x="562" y="418">tb_person, regras de Bean Validation</text>
+    <text x="148" y="534">perfil test (padrão)</text><text x="388" y="534">perfil prod e TestContainers</text>
+    <text x="388" y="176">validação</text><text x="459" y="300">DatabaseException</text><text x="388" y="396">mapeia</text>
+  </g>
+  <g fill="#6b6a65" font-size="11.5"><text x="308" y="124">HTTP / JSON</text><text x="572" y="120">JSON de erro 400 / 404</text></g>
+</svg>
