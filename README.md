@@ -146,7 +146,7 @@ O perfil `test` já vem ativo no `application.yml`, não precisa de banco instal
 | Checkpoint | Data | Conteúdo | Status |
 |------------|------|----------|--------|
 | Entrega 1 | 26/10 | Seleção do sistema, criação do GitHub, cadastro dos integrantes, README | ✅ |
-| Entrega 2 | 09/11 | Documentação da arquitetura, Plano de Testes, Matriz de Rastreabilidade, Análise de Riscos | ⏳ |
+| Entrega 2 | 09/11 | Documentação da arquitetura, Plano de Testes, Matriz de Rastreabilidade, Análise de Riscos | ✅ |
 | Entrega 3 | 16/11 | Casos de Teste, Testes Automatizados, Relatório de Inspeção (SonarQube), Relatório de Métricas, Quality Decision | ⏳ |
 | Apresentação | 23/11 ou 30/11 | Apresentação oral (até 15 min) com demonstração do MVP | ⏳ |
 
