@@ -141,13 +141,25 @@ O perfil `test` já vem ativo no `application.yml`, não precisa de banco instal
 
 ---
 
+## 📚 Documentação
+
+| Documento | Entrega | Status |
+|-----------|---------|--------|
+| [Arquitetura](docs/arquitetura/README.md) | 2 | ✅ |
+| [Plano de testes (ISO/IEC/IEEE 29119)](docs/plano-de-testes/plano-de-testes.md) | 2 | ✅ |
+| [Análise de riscos](docs/riscos/analise-de-riscos.md) | 2 | ✅ |
+| [Requisitos e matriz de rastreabilidade](docs/rastreabilidade/matriz-de-rastreabilidade.md) | 2 | ✅ |
+| [Especificação dos casos de teste (CT01–CT34)](docs/casos-de-teste/casos-de-teste.md) | 3 | ✅ Especificados · ⏳ execução |
+
+---
+
 ## 📅 Cronograma de entregas
 
 | Checkpoint | Data | Conteúdo | Status |
 |------------|------|----------|--------|
 | Entrega 1 | 26/10 | Seleção do sistema, criação do GitHub, cadastro dos integrantes, README | ✅ |
 | Entrega 2 | 09/11 | Documentação da arquitetura, Plano de Testes, Matriz de Rastreabilidade, Análise de Riscos | ✅ |
-| Entrega 3 | 16/11 | Casos de Teste, Testes Automatizados, Relatório de Inspeção (SonarQube), Relatório de Métricas, Quality Decision | ⏳ |
+| Entrega 3 | 16/11 | Casos de Teste (✅ especificados), Testes Automatizados, Relatório de Inspeção (SonarQube), Relatório de Métricas, Quality Decision | ⏳ |
 | Apresentação | 23/11 ou 30/11 | Apresentação oral (até 15 min) com demonstração do MVP | ⏳ |
 
 ---
