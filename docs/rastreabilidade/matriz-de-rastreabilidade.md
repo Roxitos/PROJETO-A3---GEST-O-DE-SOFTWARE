@@ -36,7 +36,7 @@ Os 18 requisitos abaixo foram extraídos do código, das anotações Swagger e d
 | CT03 | Listar com `size=0` e `page=-1` | 200 com valores ajustados, sem erro 500 | Sistema | Valor-limite |
 | CT04 | Buscar id existente | 200 + pessoa | Sistema | Partição de equivalência |
 | CT05 | Buscar id inexistente | 404 + `StandartError` | Sistema | Partição de equivalência |
-| CT06 | Buscar id `abc` | 400 "Type mismatch" | Sistema | Partição de equivalência |
+| CT06 | Buscar e excluir id `abc` | 400 "Type mismatch" | Sistema | Partição de equivalência |
 | CT07 | Buscar e-mail existente (com ponto e `+`) | 200 + pessoa | Sistema | Partição de equivalência |
 | CT08 | Buscar e-mail inexistente | 404 + `StandartError` | Sistema | Partição de equivalência |
 | CT09 | Cadastrar pessoa válida | 201 + pessoa com id; GET encontra | Sistema | Partição de equivalência |
@@ -49,10 +49,10 @@ Os 18 requisitos abaixo foram extraídos do código, das anotações Swagger e d
 | CT16 | Atualizar id inexistente | 404 | Sistema | Tabela de decisão |
 | CT17 | Atualizar sem id | 400 "The field id is required" | Sistema | Partição de equivalência |
 | CT18 | Atualizar trocando o e-mail para o de outra pessoa | 400; e-mail continua único | Sistema | Tabela de decisão |
-| CT19 | Atualizar com campo obrigatório vazio | 400 | Sistema | Partição de equivalência |
+| CT19 | Atualizar com campo obrigatório vazio, e-mail inválido ou campo acima do tamanho | 400; nada alterado | Sistema | Partição de equivalência |
 | CT20 | Excluir id existente e buscar em seguida | 204, depois 404 | Sistema | Partição de equivalência |
 | CT21 | Excluir id inexistente | 404 | Sistema | Partição de equivalência |
-| CT22 | Chamar rota inexistente e método não suportado | 404 / 405 em JSON padronizado | Sistema | Partição de equivalência |
+| CT22 | Chamar rota inexistente, método não suportado e enviar JSON malformado | 404 / 405 / 400 em JSON padronizado | Sistema | Partição de equivalência |
 | CT23 | Executar os exemplos do Swagger UI para POST e PUT | Exemplos funcionam como documentado | Aceitação | Revisão de documentação |
 | CT24 | `PersonService.save`: e-mail novo e e-mail existente | Salva / lança `DatabaseException` | Unitário | Cobertura de decisão |
 | CT25 | `PersonService.update`: id existente e inexistente | Chama `updatePerson` / lança exceção | Unitário | Cobertura de decisão |
@@ -77,16 +77,16 @@ Os 18 requisitos abaixo foram extraídos do código, das anotações Swagger e d
 | RF05 | CT15, CT16, CT25, CT30, CT31 | Sim | R02 |
 | RF06 | CT20, CT21, CT26, CT31 | Sim | — |
 | RN01 | CT10, CT19, CT29 | Não | — |
-| RN02 | CT11, CT29 | Não | R01 |
+| RN02 | CT11, CT19, CT29 | Não | R01 |
 | RN03 | CT12, CT18, CT24, CT27 | Parcial (só no cadastro) | R02 |
 | RN04 | CT17, CT29 | Não | — |
-| RN05 | CT13, CT14 | Não | R03 |
+| RN05 | CT13, CT14, CT19 | Não | R03 |
 | RN06 | CT05, CT08, CT16, CT21, CT27 | Sim | R04 |
 | RN07 | CT06, CT28 | Não | — |
 | RNF01 | CT23 | Parcial (só carrega a página) | R06 |
-| RNF02 | CT22, CT27, CT28 | Não | R03, R04 |
+| RNF02 | CT03, CT22, CT27, CT28 | Não | R03, R04 |
 | RNF03 | CT33 | Não | R05 |
 | RNF04 | CT34 | Relatório configurado, meta não definida | R08 |
 | RNF05 | CT32, CT33 | Não | R07, R09 |
 
-Todos os 18 requisitos têm ao menos um caso de teste; 8 deles (RN01, RN02, RN04, RN05, RN07, RNF02, RNF03, RNF05) não tinham nenhum teste no repositório original e RN03 só era testado no cadastro, e é aí que a equipe concentra os testes novos.
+Todos os 18 requisitos têm ao menos um caso de teste (detalhados na [especificação de casos de teste](../casos-de-teste/casos-de-teste.md)); 8 deles (RN01, RN02, RN04, RN05, RN07, RNF02, RNF03, RNF05) não tinham nenhum teste no repositório original e RN03 só era testado no cadastro, e é aí que a equipe concentra os testes novos.
