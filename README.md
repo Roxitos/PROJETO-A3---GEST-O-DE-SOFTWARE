@@ -149,7 +149,7 @@ O perfil `test` já vem ativo no `application.yml`, não precisa de banco instal
 | [Plano de testes (ISO/IEC/IEEE 29119)](docs/plano-de-testes/plano-de-testes.md) | 2 | ✅ |
 | [Análise de riscos](docs/riscos/analise-de-riscos.md) | 2 | ✅ |
 | [Requisitos e matriz de rastreabilidade](docs/rastreabilidade/matriz-de-rastreabilidade.md) | 2 | ✅ |
-| [Especificação dos casos de teste (CT01–CT34)](docs/casos-de-teste/casos-de-teste.md) | 3 | ✅ Especificados · ⏳ execução |
+| [Especificação dos casos de teste (CT01–CT34)](docs/casos-de-teste/casos-de-teste.md) | 3 | ✅ |
 
 ---
 
